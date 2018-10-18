@@ -11,7 +11,7 @@
 			</div>
 			<div class="wrapper-item" ng-repeat="grupo in beneficios.grupos" ng-if="grupo.tipoBolsa === 'saldos'" ng-class="{'to-detail': grupo.toDetail}" id="iditems{{$index}}">
 				
-				<div class="item-row" ng-class="{'cursor-default': esIllimitada(grupo.disponible)}" ng-click="esIllimitada(grupo.disponible) && showDetail(grupo, 'iditems' + $index)">
+				<div class="item-row" ng-class="{'cursor-default': esIllimitada(grupo.disponible)}" ng-click="!esIllimitada(grupo.disponible) && showDetail(grupo, 'iditems' + $index)">
 					<div class="item-col width-40 padding-lr-20">
 						<i class="item-ico" ng-class="grupo.icon"></i>
 					</div>
