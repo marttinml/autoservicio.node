@@ -208,40 +208,32 @@
             mensajes:{
                 icono: 'att-consumo-mensajes',
                 tipo: 'Mensajes',
-                titulos: ['Número', 'Fecha', 'Minutos', 'Hora','Compañia','Localidad','Costo'],
+                titulos: ['Número', 'Fecha', 'Hora','Compañia'],
                 contenido: [
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '0', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '20', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '10', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
-                    ['556787001', '12 Dic', '5', '5:80','IUSACELL','CDMX','$5,00'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL'],
+                    ['556787001', '12 Dic', '5:80','IUSACELL']
 
                 ]
             }
         };
        
-       $scope.beneficios = {
-           "color":"yellow",
+        $routeParams.color = $routeParams.color || 'yellow';
+
+        $scope.beneficios = {
+           "color": $routeParams.color,
            "grupos": [
                {
                    "tipoBolsa": "saldos",

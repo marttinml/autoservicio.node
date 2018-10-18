@@ -1,6 +1,6 @@
-<att-spin ng-class="{hide:spin}"></att-spin>
+<!-- <att-spin ng-class="{hide:spin}"></att-spin> -->
 <main ng-class="beneficios.color" ng-class="{'to-detail': item.toDetail}" ng-show="spin">
-		<att-header h1="titulo" h2="career" ></att-header>
+		<!-- <att-header h1="titulo" h2="career" ></att-header> -->
 		
 
 		<section id="contentItems">
@@ -11,7 +11,7 @@
 			</div>
 			<div class="wrapper-item" ng-repeat="grupo in beneficios.grupos" ng-if="grupo.tipoBolsa === 'saldos'" ng-class="{'to-detail': grupo.toDetail}" id="iditems{{$index}}">
 				
-				<div class="item-row" ng-click="!esIllimitada(grupo.disponible) && showDetail(grupo, 'iditems' + $index)">
+				<div class="item-row" ng-class="{'cursor-default': esIllimitada(grupo.disponible)}" ng-click="esIllimitada(grupo.disponible) && showDetail(grupo, 'iditems' + $index)">
 					<div class="item-col width-40 padding-lr-20">
 						<i class="item-ico" ng-class="grupo.icon"></i>
 					</div>
@@ -38,7 +38,7 @@
 				</div>
 				<div class="wrapper-item" ng-repeat="grupo in beneficios.grupos"  ng-if="grupo.tipoBolsa === 'beneficios'" ng-class="{'to-detail': grupo.toDetail}" id="iditemb{{$index}}">
 					
-					<div class="item-row" ng-click="!esIllimitada(grupo.disponible) && showDetail(grupo, 'iditemb' + $index)">
+					<div class="item-row" ng-class="{'cursor-default': esIllimitada(grupo.disponible)}" ng-click="!esIllimitada(grupo.disponible) && showDetail(grupo, 'iditemb' + $index)">
 						<div class="item-col width-40 padding-lr-20">
 							<i class="item-ico" ng-class="grupo.icon"></i>
 						</div>
@@ -216,7 +216,7 @@
 			<table class="detalle-consumos">
 				<thead>
 					<tr>
-						<th ng-repeat="item in consumosTable.titulos">{{item}}</th>
+						<th ng-repeat="item in consumosTable.titulos">{{item}} <i class="icon icon-arrow icon-bottom margin-left-20"></i></th>
 					</tr>
 				</thead>
 				<tbody>

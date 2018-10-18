@@ -27,6 +27,10 @@
             templateUrl: baseUrl + 'cartera/views/cartera.view.html',
             controller: 'CarteraController'
         });
+        $routeProvider.when('/beneficios/:sesion/:color', {
+            templateUrl: baseUrl + 'cartera/views/cartera.view.html',
+            controller: 'CarteraController'
+        });
 
         // $locationProvider.html5Mode(true);
     };
