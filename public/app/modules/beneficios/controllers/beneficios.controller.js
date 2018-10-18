@@ -391,6 +391,6 @@
        $scope.init();
     };
     controller.$inject = ['$scope','$rootScope','$routeParams', '$compile'];
-    angular.module('app').controller('CarteraController', controller);
+    angular.module('app').controller('BeneficiosController', controller);
 
 })();

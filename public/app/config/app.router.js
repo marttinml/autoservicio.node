@@ -19,17 +19,17 @@
 
         // beneficios token
         $routeProvider.when('/beneficios/', {
-            templateUrl: baseUrl + 'cartera/views/cartera.view.html',
-            controller: 'CarteraController'
+            templateUrl: baseUrl + 'beneficios/views/beneficios.view.html',
+            controller: 'BeneficiosController'
         });
         // beneficios token + sesion
         $routeProvider.when('/beneficios/:sesion', {
-            templateUrl: baseUrl + 'cartera/views/cartera.view.html',
-            controller: 'CarteraController'
+            templateUrl: baseUrl + 'beneficios/views/beneficios.view.html',
+            controller: 'BeneficiosController'
         });
         $routeProvider.when('/beneficios/:sesion/:color', {
-            templateUrl: baseUrl + 'cartera/views/cartera.view.html',
-            controller: 'CarteraController'
+            templateUrl: baseUrl + 'beneficios/views/beneficios.view.html',
+            controller: 'BeneficiosController'
         });
 
         // $locationProvider.html5Mode(true);
